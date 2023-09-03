@@ -1,0 +1,12 @@
+# Airpods
+
+$ bluetoothctl
+# to pair
+#[bluetoothctl] power on
+#[bluetoothctl] agent on
+#[bluetoothctl] default-agent
+#[bluetoothctl] scan on
+# At this point, I put my airpods into pair mode (case open, pods in, and hold button until blinking white light)
+$ pair <macaddress>
+# to connect
+$ connect <macaddress>
