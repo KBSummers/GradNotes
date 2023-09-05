@@ -22,7 +22,7 @@ We can solve this by ordering jobs by finish times first so that f1 $\lt$ f2 $\l
 
 implementation:
 
-![finish time implementation](./images/greedy_impl.png "Greedy Implementation: Finish Times")
+![finish time implementation](./images/finish_impl.png "Greedy Implementation: Finish Times")
 
 It says O(n log n) time, because though the algorithm itself only take n time, we have to sort the finish times first, and best case of sorting is always log n.
 
