@@ -145,6 +145,8 @@ Online vs Offline Algorithms
 
 ![None](./images/dijkstraspi.png)
 
+and add v to S, and set d(v) = $\pi$(v)
+
 
 
 ### Minimum Spanning Tree
