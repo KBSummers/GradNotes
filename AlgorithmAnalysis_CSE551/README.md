@@ -49,7 +49,7 @@ into this:
 #### Greedy Algorithm
 In order to solve this problem with a greedy algorithm template, we can consider lectures in order of start time, and assign lectures to any compatible classroom.
 
-![greedy partitioning](part_greedy.png)
+![greedy partitioning](./images/part_greedy.png)
 
 Here we can see this is also done in O(n log n) time, we have to sort in the beginning so log n, and we iterate through only one pass of n, so n log n is the complexity again here.
 
