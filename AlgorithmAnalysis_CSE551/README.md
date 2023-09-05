@@ -18,7 +18,7 @@ There are four different aspects of the jobs that we can consider,
 Those three above break with greedy method, as shown below:
 ![greedy breaks for scheduling](./images/IS_greedy_breaks.png "Greedy Breaks for Interval Scheduling")
 
-We can solve this by ordering jobs by finish times first so that f~1~$\lt$f~2~$\lt$f~3~
+We can solve this by ordering jobs by finish times first so that f~1~ $\lt$ f~2~ $\lt$ f~3~
 
 ## Interval Partitioning
 
