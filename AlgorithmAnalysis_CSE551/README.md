@@ -106,4 +106,47 @@ Ex. k = 2, initial cache = ab, requests: a, b, c, b, c, a, a, b
 
 ![Optimal Eviction Chart](./images/evictionchart.png)
 
+Basically the question is which item to evict at each request, in order to ensure that the number of cache misses are minimal.
 
+* Optimal Solution
+
+**Farthest in the Future**, evict item in the cache that is not requested until farthest in the future.
+
+![Farthest in the Future](./images/fitfcache.png)
+
+A **reduced** schedule is a schedule that only inserts an item into the cache in which that item is requested. We can transform an unreduced schedule into a reduced one with no more misses than it had before.
+
+Online vs Offline Algorithms
+
+- Offline: full sequence of requests is known a priori.
+- Online: requests are not known in advance.
+
+**LIFO** evict page brought in more recently.
+**LRU** evict page whose most recent access was earliest.
+
+^ Neither are as optimal as Farthest in the Future (FF), which is basis for understanding and analyzing online algorithms. LRU is k-competitive, and LIFO is arbitrarily bad.
+
+## Further Examples of Greedy Algorithms
+
+### Shortest Path Problem
+
+**Shortest Path Network**
+- Directed Graph G =(V, E)
+- Source s, destination t
+- Length l_e = length of edge e
+
+**Shortest Path Problem**: find shortest directed path from s to t.
+
+
+### Dijkstra's Algorithm
+- Maintain a set of explored nodes S for which we have determined shortest path distance d(u) from s to u.
+- Initialize S = {s}, d(s) = 0.
+- Keep choosing an unexplored node v that minimizes 
+
+![None](./images/dijkstraspi.png)
+
+
+
+### Minimum Spanning Tree
+
+### Applications
