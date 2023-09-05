@@ -98,7 +98,7 @@ Swapping two adjacent, inverted jobs reduces the number inversions by one and do
 - Cache hit: item already in cache when requested.
 - Cache miss: item not already in cache when requested: must bring requested item into cache, and evict some existing item, if full.
 
-**Goal** Eviction schedule minimizes number of cache misses.
+**Goal** Eviction schedule that minimizes number of cache misses.
 
 Ex. k = 2, initial cache = ab, requests: a, b, c, b, c, a, a, b
 
