@@ -40,8 +40,33 @@ into this:
 
 ![good intervals](./images/goodints.png)
 
-   * Observations *
-    
-   The *depth* of a set of open intervals is the maximum number of intervals that contain any given time.
+### Observations
+- The *depth* of a set of open intervals is the maximum number of intervals that contain any given time.
+- Number of classrooms needed is $\ge$ depth.
+- This is obvious, because if we have x number of classes that are at a certain time, we can't use less than x classrooms in an optimal solution.
 
-   Number of classrooms needed is $\ge$ depth.
+#### Greedy Algorithm
+In order to solve this problem with a greedy algorithm template, we can consider lectures in order of start time, and assign lectures to any compatible classroom.
+
+![greedy partitioning](part_greedy.png)
+
+Here we can see this is also done in O(n log n) time, we have to sort in the beginning so log n, and we iterate through only one pass of n, so n log n is the complexity again here.
+
+## Scheduling to Minimize Lateness
+
+- Single resource processes one job at a time.
+- Job j requires t_j units of processing time and is due at  time d_j.
+- If j starts at times s_j, it finishes at time f_j = s_j + t_j
+- **Lateness** l_j = max(0, f_j - d_j)
+- **Goal** schedule all jobs to minimize maximum lateness L = max l_j
+
+![Bad lateness](./images/mlfirst.png)
+**Greedy Template** We need to consider jobs in a certain order. 
+
+- ~~Shortest Processing Time~~ t_j
+![Shortest Process Time counter](./images/spt.png)
+- Earliest Deadline First d_j
+- ~~Smallest Slack~~ d_j - t_j
+![Smallest Slack Counter](./images/smallslack.png)
+
+- ![Optimal solution](./images/mlopt.png)
