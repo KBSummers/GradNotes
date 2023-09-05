@@ -1,7 +1,3 @@
-# CSE 551 Notes
-# Module 1
-
-
 # Module 2
 ## Interval Scheduling
 Job j starts at s~j~ and finished at f~j~
@@ -90,20 +86,5 @@ Swapping two adjacent, inverted jobs reduces the number inversions by one and do
 - **Greedy algorithm stays ahead** - after each step of algo, its solution is at least as good as any other algorithms
 - **Exchange argument** - gradually transform any solution to on found by greedy algorithm without hurting quality
 - **Structural** - Determine bound asserting that every possible solution must have certain value, show that algo always achieves this bound.
-
-## Optimal Offline Caching
-
-- Cache with capacity to store k items.
-- Sequence of m item request d_1, d_2, ..., d_m.
-- Cache hit: item already in cache when requested.
-- Cache miss: item not already in cache when requested: must bring requested item into cache, and evict some existing item, if full.
-
-**Goal** Eviction schedule minimizes number of cache misses.
-
-Ex. k = 2, initial cache = ab, requests: a, b, c, b, c, a, a, b
-
-**Optimal Eviction Schedule** : 2 cache misses.
-
-![Optimal Eviction Chart](./images/evictionchart.png)
 
 
