@@ -61,15 +61,16 @@ Here we can see this is also done in O(n log n) time, we have to sort in the beg
 - **Goal** schedule all jobs to minimize maximum lateness L = max l_j
 
 ![Bad lateness](./images/mlfirst.png)
+
 **Greedy Template** We need to consider jobs in a certain order. 
 
 - ~~Shortest Processing Time~~ t_j
 
 ![Shortest Process Time counter](./images/spt.png)
 - ~~Smallest Slack~~ d_j - t_j
--
+
 ![Smallest Slack Counter](./images/smallslack.png)
 
 
 - Earliest Deadline First d_j
-- ![Optimal solution](./images/mlopt.png)
+![Optimal solution](./images/mlopt.png)
