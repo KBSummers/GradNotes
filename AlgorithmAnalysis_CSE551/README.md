@@ -3,15 +3,17 @@
 
 # Module 2
 ## Interval Scheduling
-   Job j starts at s~j~ and finished at f~j~
-   Two jobs are compatible if they don't overlap.
-   Goal: find max subset of mutually compatible jobs
+Job j starts at s~j~ and finished at f~j~
+
+Two jobs are compatible if they don't overlap.
+
+Goal: find max subset of mutually compatible jobs
 
 There are four different aspects of the jobs that we can consider, 
-* Earliest Start Time
+* ~~Earliest Start Time~~
 * Earliest Finish Time
-* Shortest Interval
-* Fewest Conflicts
+* ~~Shortest Interval~~
+* ~~Fewest Conflicts~~
 
 
 ## Interval Partitioning
