@@ -28,10 +28,17 @@ It says O(n log n) time, because though the algorithm itself only take n time, w
 
 ## Interval Partitioning
 
-### Interval Partitioning
-Lecture j starts at s_j and finished at f_1 
+Lecture j starts at s_j and finished at f_j, and the **goal** is to find the **minimum number of classrooms to schedule all lectures, so that no two occur at same time in same room.**
+
+
 
 Goal: to find the minimum number of classrooms (or servers) to schedule all the lectures (or jobs), so that no two occur at the same time in the same room.
+
+![bad intervals](./images/badints.png)
+
+into this:
+
+![good intervals](./images/goodints.png)
 
    * Observations *
     
