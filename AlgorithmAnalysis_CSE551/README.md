@@ -15,6 +15,13 @@
    Lecture j starts at s_j and finished at f_j
    Goal: to find the minimum number of classrooms (or servers) to schedule all the lectures (or jobs), so that no two occur at the same time in the same room.
 
+
+There are four different aspects of the jobs that we can consider, 
+* Earliest Start Time
+* Earliest Finish Time
+* Shortest Interval
+* Fewest Conflicts
+
    * Observations *
     
    The *depth* of a set of open intervals is the maximum number of intervals that contain any given time.
