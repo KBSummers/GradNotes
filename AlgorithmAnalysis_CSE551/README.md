@@ -18,7 +18,13 @@ There are four different aspects of the jobs that we can consider,
 Those three above break with greedy method, as shown below:
 ![greedy breaks for scheduling](./images/IS_greedy_breaks.png "Greedy Breaks for Interval Scheduling")
 
-We can solve this by ordering jobs by finish times first so that f~1~ $\lt$ f~2~ $\lt$ f~3~
+We can solve this by ordering jobs by finish times first so that f1 $\lt$ f2 $\lt$ f3 and so on..
+
+implementation:
+
+![finish time implementation](./images/greedy_impl.png "Greedy Implementation: Finish Times")
+
+It says O(n log n) time, because though the algorithm itself only take n time, we have to sort the finish times first, and best case of sorting is always log n.
 
 ## Interval Partitioning
 
