@@ -74,3 +74,20 @@ Here we can see this is also done in O(n log n) time, we have to sort in the beg
 
 - Earliest Deadline First d_j
 ![Optimal solution](./images/mlopt.png)
+
+### Observations
+
+- There exists an optimal schedule with no idle time (greedy schedule)
+- An **inversion** is schedule S is a pair of jobs i and j where the deadline of i is before the deadline of j,  but j is scheduled before i
+- There are no **inversions** in the greedy schedule.
+- If a schedule (with no idle time) has an inversion, it has one with a pair of inverted jobs scheduled consecutively.
+
+Swapping two adjacent, inverted jobs reduces the number inversions by one and does not increase the max lateness.
+
+## Greedy Analysis Strategies
+
+- **Greedy algorithm stays ahead** - after each step of algo, its solution is at least as good as any other algorithms
+- **Exchange argument** - gradually transform any solution to on found by greedy algorithm without hurting quality
+- **Structural** - Determine bound asserting that every possible solution must have certain value, show that algo always achieves this bound.
+
+
