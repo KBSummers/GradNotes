@@ -15,11 +15,15 @@ There are four different aspects of the jobs that we can consider,
 * ~~Shortest Interval~~
 * ~~Fewest Conflicts~~
 
+Those three above break with greedy method, as shown below:
+![greedy breaks for scheduling](./images/IS_greedy_breaks.png "Greedy Breaks for Interval Scheduling")
+
+We can solve this by ordering jobs by finish times first so that f~1~$\lt$f~2~$\lt$f~3~
 
 ## Interval Partitioning
 
 ### Interval Partitioning
-Lecture j starts at s_j and finished at f_j
+Lecture j starts at s_j and finished at f_1 
 
 Goal: to find the minimum number of classrooms (or servers) to schedule all the lectures (or jobs), so that no two occur at the same time in the same room.
 
