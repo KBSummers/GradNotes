@@ -147,7 +147,9 @@ Online vs Offline Algorithms
 
 and add v to S, and set d(v) = $\pi$(v)
 
+![dijkstra complexity](./images/dicomplexity.png)
 
+Here we can see that the most efficient implementation of Dijkstra's algorithm is to maintain a priority queue of unexplored nodes, prioritized by $\pi$(v) and to use a Fibonacci Heap
 
 ### Minimum Spanning Tree
 
